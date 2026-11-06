@@ -12,14 +12,16 @@ financial fields from them, and builds a local personal-finance ledger.
 
 Everything happens on-device. There is no server, no account, no sync.
 
-Distribution is **sideload-only** (signed APK, shared directly). It will not be
-published to Google Play. This is deliberate: Play's restricted-permission flow
-for `READ_SMS` / `RECEIVE_SMS` requires a declaration form, a hosted privacy
-policy, and review. That cost is not worth paying for a portfolio app.
+Distribution target is **Google Play** (decided 2026-11-06, replacing the earlier
+sideload-only plan). Until the first Play release is being prepared, builds are
+plain debug/signed APKs installed directly.
 
-**Consequence you must respect:** do not add code, manifest entries, or docs
-whose only purpose is Play Store compliance (Data Safety metadata, Play Billing,
-Play Integrity, App Bundle-only config). Build a plain signed APK.
+**Risk you must keep in view:** Play restricts `READ_SMS` / `RECEIVE_SMS`. It needs
+a permission declaration form, a hosted privacy policy, and review, and Google may
+refuse an expense tracker. Do not claim Play approval is likely. Do not add
+Play-only work (Data Safety metadata, App Bundle config, declaration text) until
+the owner asks for the release phase; Play Billing and Play Integrity are never
+added.
 
 ---
 
@@ -45,7 +47,7 @@ Play Integrity, App Bundle-only config). Build a plain signed APK.
 | Layer | Choice |
 |---|---|
 | Language | Kotlin (no Java sources) |
-| UI | Jetpack Compose, Material 3 |
+| UI | Jetpack Compose (foundation + ui only, no Material 3 dependency). Look and feel follow `design.md` in the owner's Ledger Project: iPhone style, custom theme and components. The iPhone look wins over Material defaults. |
 | Min SDK | 26 |
 | Target / Compile SDK | 36 |
 | Architecture | MVVM + repository, unidirectional data flow |

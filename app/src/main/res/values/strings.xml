@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ledger</string>
+
+    <string name="loading">Loading</string>
+    <string name="error_load">Couldn\'t load.</string>
+    <string name="try_again">Try again</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <!-- Spend ring -->
+    <string name="left_today">left today</string>
+    <string name="over_limit">over limit</string>
+    <string name="spent_today">spent today</string>
+    <string name="spent_of_limit">%1$s of %2$s spent</string>
+    <string name="spend_ring_description">%1$s spent of %2$s, %3$s left today</string>
+    <string name="spend_ring_description_over">%1$s spent of %2$s, %3$s over the limit</string>
+    <string name="spend_ring_description_no_limit">%1$s spent today, no daily limit set</string>
+    <string name="change_limit">Change limit</string>
+    <string name="set_daily_limit">Set a daily limit</string>
+    <string name="no_limit_set">No daily limit set.</string>
+    <string name="month_spent">%1$s spent in %2$s</string>
+
+    <!-- Accounts card -->
+    <plurals name="accounts_count">
+        <item quantity="one">%d account</item>
+        <item quantity="other">%d accounts</item>
+    </plurals>
+    <string name="balances_hidden">Balances hidden</string>
+    <string name="balance_mask">••••</string>
+    <string name="show_balances">Show balances</string>
+    <string name="hide_balances">Hide balances</string>
+    <string name="balances_partial">From %1$d of %2$d accounts</string>
+    <string name="balance_as_of">as of %1$s</string>
+    <string name="balance_unknown">—</string>
+    <string name="balance_none_yet">No balance yet</string>
+    <string name="wallets_label">Wallets</string>
+    <string name="no_accounts">No accounts found yet.</string>
+
+    <!-- Recent list -->
+    <string name="recent_title">Recent</string>
+    <string name="recent_empty">No transactions yet.</string>
+    <string name="add_one">Add one</string>
+    <string name="money_out">Money out</string>
+    <string name="money_in">Money in</string>
+    <string name="manual_account">Manual</string>
+    <string name="day_today">Today</string>
+    <string name="day_yesterday">Yesterday</string>
+    <string name="row_caption">%1$s · %2$s</string>
+    <string name="credit_amount">+%1$s</string>
+
+    <!-- Add sheet -->
+    <string name="add_button_description">Add</string>
+    <string name="add_title">Add</string>
+    <string name="amount_label">Amount</string>
+    <string name="note_label">Note</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+
+    <!-- Daily limit -->
+    <string name="limit_sheet_title">Daily limit</string>
+    <string name="limit_hint">How much do you want to spend in a day, at most?</string>
+    <string name="first_run_limit_title">What\'s your daily spending limit?</string>
+    <string name="continue_label">Continue</string>
+    <string name="set_later">Set later</string>
+</resources>
