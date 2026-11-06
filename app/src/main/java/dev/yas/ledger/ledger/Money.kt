@@ -37,7 +37,7 @@ fun parseRupeesToPaise(input: String): Long? {
     val cleaned = input.trim().replace(",", "")
     if (!RUPEE_INPUT.matches(cleaned)) return null
     val paise = BigDecimal(cleaned).movePointRight(2).setScale(0, RoundingMode.HALF_UP)
-    if (paise.signum() <= 0 || paise.bitLength() >= Long.SIZE_BITS - 1) return null
+    if (paise.signum() <= 0 || paise.toBigInteger().bitLength() >= Long.SIZE_BITS - 1) return null
     return paise.toLong()
 }
 
